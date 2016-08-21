@@ -13,11 +13,22 @@ What value do you think it offers?
 
 How can you use the staging area to make sure you have one commit per logical
 change?
+  The git diff --staged and git diff commands can be used to check the exact changes being added before they are added.
+  git diff --staged tells the changes between the staging area and the latest repository while git diff tells the changes between the working directory and the staging area.
+  If anything other than one logical change is different then we know that there is a problem.
 
 What are some situations when branches would be helpful in keeping your history
 organized? How would branches help?
+  Situations where branches are helpful/necessary:
+    When an experimental change is to be made, for example adding a new language or adding a feature that may not work
+    When experimenting with someone else' code
+    When changing code that a lot of people are using.
+    When you want to context-switch/ getting bored or frustrated working on one feature to work on another
+  Branches would help in keeping the main code-base separate and safe while a development branch is used to do any experimental work.
+  This could be especially helpful when working on consumer level projects or projects/libraries that more people use
 
 How do the diagrams help you visualize the branch structure?
+  
 
 What is the result of merging two branches together? Why do we represent it in
 the diagram the way we do?
