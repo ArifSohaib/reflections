@@ -1,0 +1,61 @@
+How did viewing a diff between two versions of a file help you see the bug that
+was introduced?
+
+  Since the task involved comparing a well formatted html file in one case(Sunflower test page) and a well formatted javascript file (asteriods clone), the diff command showed a all the differences line by line(seperating by '\n' char.
+  the diff command showed the exact line that was differenet.
+  This line, being short enough to easily read, was used by me to find the exact point/character where the two files differed.
+  Had each line in both files been longer, it would be much more difficult to see each point of difference this easily.
+
+
+How could having easy access to the entire history of a file make you a more
+efficient programmer in the long term?
+  Having access to the whole history of the file means that I can change between versions.
+  If a mistake was made in a new version and I don't have the history of the file I would need to remember and check each thing I changed individually.
+  This is possible but very inefficient.
+  PERSONAL ANICIDOTE:
+  I remember saving my multiple versions of the files in my final year project, the files had a tendency to get significantly long.
+  Luckily I used to save a version of each file whenever a big feature or a significant module was completed.
+  However, since I didn't know exactly what changed between files, I would spend hours looking if I made a mistake or start a completely new version from the
+  past save and end up removing everything that was done before that one mistake.
+
+What do you think are the pros and cons of manually choosing when to create a
+commit, like you do in Git, vs having versions automatically saved, like Google
+docs does?
+
+    Pros of manual saving/commit:
+    -Every save is done at a logical change
+    -Every change can be labeled in the commit and be easily found
+    -Breaking changes are less likely than automatic saving
+    -The number of commits are less and thus easier to manually find relevant commits
+
+    Cons of manual saving/commit:
+    -You could forget to save
+    -Having to stop work to save
+    -Accidentally saving a large change instead of a proper logical change
+
+Why do you think some version control systems, like Git, allow saving multiple
+files in one commit, while others, like Google Docs, treat each file separately?
+
+    In systems like Google Docs, each file is a separate and unrelated entity in almost all cases. The only possible difference being spreadsheets. So it does not make sense to save multiple files at the same time.
+
+    In systems like Git, the files are inter-related. For example a class could be defined in one file and used in another. Any changes to the class and the other program/module using it should reflect both.
+
+How can you use the commands git log and git diff to view the history of files?
+
+    git log shows the whole history of changes done in each commit while git diff shows the difference between any two commits.
+    To view the entire history of files I can first check the log using git log. Then find the commit I am looking for using the description.
+    If I need to compare this commit with another, I also find its commit ID and use git diff with both IDs to find the exact difference.
+
+How might using version control make you more confident to make changes that
+could break something?
+
+    If I am using version control, I know I can go back to a previous version of a file if a version is saved at regular intervals and at each logical change.
+    This way if I change something that breaks the program, I can just use "git checkout <commit ID>" to go back to any previous version instead of starting from scratch.
+
+Now that you have your workspace set up, what do you want to try using Git for?
+
+    I want to try using Git for most of my projects.
+    Firstly, I have been experimenting with Tensorflow and trying to make a Ladder neural network based on a research paper.
+    I have already made a normal network and an autoencoder so I want to save it as a repo. The I want to try using slowly adding the second network alongside the normal netowrk as in the artchiture described.
+    If there appear to be any breaking changes, I can just go back to the older version. 
+    Eventually I could try moving beyond the given paper and trying CNN and RNN with the Ladder network.
