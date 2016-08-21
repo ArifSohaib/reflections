@@ -28,7 +28,9 @@ organized? How would branches help?
   This could be especially helpful when working on consumer level projects or projects/libraries that more people use
 
 How do the diagrams help you visualize the branch structure?
-  
+  The diagrams/graph shows the commits and branches and allow me to see which branches are reachable and which branches contain which code.
+  For example if a feature eg. different animation was added in main but another branch was checked out before to add another feature, it would be difficult to know which branch contains which features as the coins branch does not contain animation.
+  A graph showing the branch structure can allow one to easily understand that the feature was added after the code branched into another
 
 What is the result of merging two branches together? Why do we represent it in
 the diagram the way we do?
