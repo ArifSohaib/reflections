@@ -39,7 +39,13 @@ the diagram the way we do?
   All other original code is added.
   In addition, any code added at the commits right before the merge but not in the original is added.
 
-  Representing this in a sequence diagram of the commits of each branch allows us to see what code will be added and what will not be added in the final merged commit
+  Representing this in a sequence diagram of the commits of each branch allows us to see what code will be added and what will not be added in the final merged commit.
 
 What are the pros and cons of Git’s automatic merging vs. always doing merges
 manually?
+  If there are no conflicts, then git merges merges two branches automatically using 'git merge branch1 branch2'.
+  This ensures that we don't have to look through both branches and check every piece of code that is different.
+
+  However, if there is a conflict then we have have to manually fix it and then merge.
+  Without this, if git tries to 'guess' what code should go in or not, it could make a lot of mistakes and make the code unable to compile or cause logical or other errors.
+  
