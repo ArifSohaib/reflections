@@ -30,10 +30,16 @@ organized? How would branches help?
 How do the diagrams help you visualize the branch structure?
   The diagrams/graph shows the commits and branches and allow me to see which branches are reachable and which branches contain which code.
   For example if a feature eg. different animation was added in main but another branch was checked out before to add another feature, it would be difficult to know which branch contains which features as the coins branch does not contain animation.
-  A graph showing the branch structure can allow one to easily understand that the feature was added after the code branched into another
+  A graph showing the branch structure can allow one to easily understand that the feature was added after the code branched into another.
 
 What is the result of merging two branches together? Why do we represent it in
 the diagram the way we do?
+  When merging two branches, Git looks at the history of the file and checks the files before the merge and the files at the merge.
+  If any code was present in the original files but removed by either of the two branches then it is removed.
+  All other original code is added.
+  In addition, any code added at the commits right before the merge but not in the original is added.
+
+  Representing this in a sequence diagram of the commits of each branch allows us to see what code will be added and what will not be added in the final merged commit
 
 What are the pros and cons of Git’s automatic merging vs. always doing merges
 manually?
