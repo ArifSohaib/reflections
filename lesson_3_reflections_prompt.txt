@@ -17,3 +17,9 @@ Describe the differences between forks, clones, and branches. When would you use
 
 What is the benefit of having a copy of the last known state of the remote stored locally?
   Having the last known state of the remote repository stored locally allows conflict resolution in merges in a way that is very similar to merging branches of a local repository.
+
+How would you collaborate without using Git or GitHub? What would be easier, and what would be harder?
+  Without Git or GitHub, I could collaborate using tools like Google Drive.
+  It would be easier to save and restore data as these tools automatically push changes while still having restore points.
+  However it would be much more difficult to track which collaborator did which changes.
+  It would also be more difficult to merge changes as these tools automatically update any changes regardless of possible confects while GitHub has tools like merge requests and fetch to help resolve these issues.
