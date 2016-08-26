@@ -23,3 +23,9 @@ How would you collaborate without using Git or GitHub? What would be easier, and
   It would be easier to save and restore data as these tools automatically push changes while still having restore points.
   However it would be much more difficult to track which collaborator did which changes.
   It would also be more difficult to merge changes as these tools automatically update any changes regardless of possible confects while GitHub has tools like merge requests and fetch to help resolve these issues.
+
+When would you want to make changes in a separate branch rather than directly in master? What benefits does each approach have?
+  When I am collaborating with someone else or on someone elses' project and I am not sure of a change and want to have them check it using a pull request, it is better to make changes in a separate branch rather than master.
+  The same is true for working on experimental features on a project that already works and is in use.
+
+  Making changes directly in master and then pushing them to the remote repository is much simpler but it does not allow others to check and then only then merge when all conflicts are resolved which results in more stable and mantainable code.
